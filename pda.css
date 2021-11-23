@@ -1,0 +1,514 @@
+     
+*{
+    box-sizing: border-box;
+    margin:0px;
+    
+}
+
+
+body{
+    background-color: #f0f2f5;
+	overflow-x: hidden;
+}
+
+section{
+    display: block;
+    margin-left: auto;
+    margin-right: 17%; 
+    margin-top: 190px;
+    height:330px;
+    width: 397px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0,0,0, .3);
+    align-items: center;
+    margin-bottom: 50px;
+
+     
+}
+.ere{
+color:#1877f2;
+text-align:center;
+}
+
+@media screen and (max-width:1300px){
+    
+
+    section{
+        margin-top: 320px;
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+    } 
+
+    
+    
+
+}
+
+
+input[type="text" ]{
+    margin-top:15px ;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 364px;
+    height:50px ;
+    border-color: rgb(184, 184, 184);
+    padding-left: 15px;
+    font-size: 15px;
+    outline-style:none;
+    
+   
+}
+
+
+
+input[type="email" ]{
+    margin-top:15px ;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 364px;
+    height:50px ;
+    border-color: rgb(184, 184, 184);
+    padding-left: 15px;
+    font-size: 15px;
+    outline-style:none;
+    
+   
+}
+
+input[type="password"]{
+    margin-top:15px ;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 364px;
+    height:50px ;
+    border-color: rgb(184, 184, 184);
+    padding-left: 15px;
+    font-size: 15px;
+    outline-style:none;
+    
+   
+}
+
+#sub{
+
+    text-align: center;
+    width: 364px;
+    height:50px ;
+    margin-top:15px ;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    background-color: #1877f2;
+    border-color: #1877f2 ;
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+
+    border:0;
+}
+
+
+.trait{
+    
+   display: block;
+   margin-right:auto;
+    margin-left: auto;
+    margin-top: 20px;
+    width:370px;
+    background-color: #d5d7da;
+    height: 0.3pt;
+}
+
+.titreee{
+    
+    position: fixed;
+    top: 97px;
+    margin-left: 17%;
+    color: #1877f2;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: 'RocknRoll One', sans-serif;
+    z-index: 1;
+    
+}
+
+
+.sous_titre{
+    position: fixed;
+    top: 185px;
+    margin-left: 18%;
+    color: black;
+    font-size: 20px;
+    font-family: 'RocknRoll One', sans-serif;
+    z-index: 1;
+    
+}
+
+
+@media screen and (max-width:1300px){
+        
+
+
+.sous_titre{
+    
+        font-size: 15px;
+        position: absolute;
+    
+    }
+    
+    .titreee{
+        position: absolute;
+    
+    }
+
+}
+#le_bas {
+    position: fixed;
+    bottom:0px;
+    text-align: center;
+    padding:7px;
+    width: 100%;
+    height: 30px; 
+    background-color: white;
+    display: block;
+    color: rgb(133, 133, 133);
+    font-size: 10px;
+    font-family: 'RocknRoll One', sans-serif;
+   
+    
+    
+}
+
+
+/* Popup pour insriptions */
+
+
+
+#inscrp{
+    
+    background-color: white;
+    position: absolute;
+    z-index: 3;
+    margin-left: -20%;
+    margin-right: auto; 
+    top: 55px;
+    height:auto;
+    width: 397px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 5px 5px rgba(0,0,0, .3);
+    align-items: center;
+    padding-bottom: 5px;
+    display:none;
+
+}
+
+
+#creer{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 173px;
+    height:47px ;
+    margin-top:20px ;
+    border-radius: 5px;
+    background-color: #42b72a;
+    border-color: #42b72a ;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+
+    border:0;
+
+}
+
+#opac{
+    position: absolute;
+    top: 0px;
+    height: 100%;
+    width: 100%;
+    z-index: 2;
+    background-color: white;
+    opacity: 0.8;
+    padding: 5px;
+    display:none;
+
+}
+
+@media screen and (max-width:1300px){
+    
+    #inscrp{
+        
+        top: 0px;
+        margin-left: auto;
+        margin-right: auto;  
+        height: auto; 
+        padding-bottom:25px ; 
+        display:none;
+    }
+}
+
+#fermer{
+    background-color: white;
+    box-shadow: 0;
+    border:0px;
+    font-family: 'Indie Flower', "cursive";
+    color: rgb(160, 160, 160);
+    font-size: 30px;
+    font-weight: bold;
+    position: absolute;
+    right:    0;
+    top:   0;
+    
+    padding-left: 15px;
+
+    
+}
+
+/*Dans le popup*/
+.zz{
+    
+    margin-top:5px ;
+    margin-left: 15px;
+    color: rgb(20, 20, 20);
+    font-size: 27px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+}
+
+.st{
+    margin-left: 15px;
+    color: #606770;
+    font-size: 15px;
+    font-family: Helvetica, Arial, sans-serif;
+}
+
+
+ .sousinscrp{
+    height:60px ;
+    width: 100%;
+    border-bottom:solid #d5d7da 0.3pt;
+
+    
+    
+ }
+input[type="text"]{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddfe2;
+}
+
+input[type="email"]{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddfe2;
+}
+
+input[type="password"]{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddfe2;
+}
+select{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddfe2;
+}
+
+
+ input[class="log"] {
+    margin-top:15px ;
+    border-radius: 5px;
+    margin-left: 15px;
+    margin-right: 15px;
+    width: 364px;
+    height:41.2px ;
+    padding-left: 15px;
+    font-size: 15px;
+    background-color:#f5f6f7;
+    outline-style:none;
+  
+    
+   
+}
+input[class="log"][placeholder]{
+    color:#333436;
+    
+}
+
+
+
+#sinsc{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    width: 194px;
+    height:36px ;
+    margin-top:20px ;
+    border-radius: 5px;
+    background-color: #42b72a;
+    border-color: #42b72a ;
+    color: white;
+    font-size: 17px;
+    font-weight: bold;
+    border:0;
+}
+
+input[placeholder="Nouveau mot de passe"] {
+    margin-bottom: 10px;
+}
+
+.dd select{
+    margin-left: 15px;
+    width:110px;
+    height:36px;
+    border-radius: 5px;
+    
+    -moz-appearance: none; 
+    text-indent: 0.01px; 
+    text-overflow: '';
+  
+    background-image: url(./10.png) ;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position-x: 90px;
+    background-color:white;
+
+}
+
+.dd1 select{
+    margin-left: 15px;
+    margin-right: 15px;
+    width:110px;
+    height:36px;
+    border-radius: 5px;
+   
+    
+    -moz-appearance: none; 
+    text-indent: 0.01px; 
+    text-overflow: '';
+  
+    background-image: url(./10.png) ;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position-x: 90px;
+	background-color:white;
+}
+.dd2 select{
+    margin-right: 15px;
+    width:110px;
+    height:36px;
+    border-radius: 5px;
+    
+    -moz-appearance: none; 
+    text-indent: 0.01px; 
+    text-overflow: '';
+  
+    background-image: url(./10.png) ;
+    background-position: center right;
+    background-repeat: no-repeat;
+    background-size: 14px;
+    background-position-x: 90px;
+    background-color:white;
+}
+
+/*Genre*/
+
+.qq{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddfe2;
+    margin-left: 15px;
+    width:105px;
+    height:36px;
+    border-radius: 5px;
+    text-align: left;
+    vertical-align: center;
+    display: flex;
+    align-items: center;
+    color: #1c1e21;
+    
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    padding: 0 28px 0 10px;
+
+    
+    
+}
+
+.genre{
+    margin-left: 20px;
+}
+
+/*Relation*/
+
+
+.qqq{
+    border-style: solid;
+    border-width: 1px;
+    border-color: #dddfe2;
+    margin-left: 15px;
+    width:110px;
+    height:36px;
+    border-radius: 5px;
+    text-align: left;
+    vertical-align: center;
+    display: flex;
+    
+    align-items: center;
+    color: #1c1e21;
+    
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 15px;
+    padding: 0 0px 0 10px;
+
+    
+    
+}
+
+
+.celib{
+    margin-left: 5px;
+    
+}
+.couple{
+    margin-left: 10px;
+    
+}
+
+.autre{
+    margin-left: 40px;
+
+}
+
+
+/**/
+.zouzou{  
+    display: flex;
+    position: relative;
+    margin-bottom: 10px;
+}
+
+
+.vache{
+    color: #606770;
+    font-family:  Helvetica, Arial, sans-serif;
+    font-size: 12px;
+    margin-left: 15px;
+}
+
+.rectf{
+	color:#a13636;
+	font-family: 'Lato', sans-serif;
+    font-weight: bold;
+    margin-left:3%;
+}

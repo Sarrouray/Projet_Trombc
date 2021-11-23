@@ -1,0 +1,130 @@
+<?php
+	session_start();
+	include("Outils/base.php");
+		if (!isset($_SESSION['id'])){
+			header('Location:index.php');
+		  	exit();
+		}
+
+?>
+<?php
+			include ("./entete.php");
+			
+?>
+
+       <?php
+			include ("./profamis.php");
+			
+			$sql = "SELECT * FROM UTILISATEURS WHERE id=:id";
+					$req = $bd->prepare($sql);
+					$req->execute(array('id'=>$_GET['amis']));
+					$login=$req->fetch();
+					$req->closeCursor();	
+		?>
+
+<main>
+	
+			<!-- Titre de la page NE PAS MODIFIER-->
+			<article class="title">
+				<div class= "titredepage">
+					<p>Informations personnelles</p>
+				</div>
+			</article>
+			
+		<div class="publ">
+			<div class=modif>
+				<label for="titreinfo">Pseudo</label>
+				</div>
+				<div class="zouzou">
+					<div class="bloccc">
+					<?php
+						echo "{$login['pseudo']}";
+					?>	 
+					</div>
+				</div>
+				<div class=modif>
+				<label for="titreinfo">Nom</label>
+				</div>
+				<div class="zouzou">
+					<div class="bloccc">
+					<?php
+						echo "{$login['nom']}";
+					?>	 
+					</div>
+				</div>
+				
+				
+				
+				<div class=modif>
+				<label for="titreinfo">Prenom</label>
+				</div>
+				<div class="zouzou">
+					<div class="bloccc">
+					<?php
+						echo "{$login['prenom']}";
+					?>	 
+					</div>
+				</div>
+				
+				
+				<!-- Date de naissance -->
+				<div class=modif>
+					
+					<label for="titreinfo">Date de naissance</label> 
+				</div>	                   
+					<div class="zouzou">
+						<div class="bloccc">
+							       
+								<?php
+									echo "{$login['jour']}";
+									echo " {$login['mois']}";
+									echo " {$login['annee']}";
+								
+								?>	   
+						</div>
+					</div>
+				<!-- Genre -->
+				<div class=modif>
+					<label for="titreinfo">Genre</label>
+				</div>
+				<div class="zouzou">
+					
+					<div class="bloccc">
+						<?php
+					echo "{$login['genre']}";
+						?>
+					</div>
+				</div>
+				<!-- Relation -->
+				<div class=modif>
+					<label for="titreinfo">Relation</label>
+				</div>
+				
+				<div class="zouzou">
+					
+					<div class="bloccc">
+						<?php
+					echo "{$login['relation']}";
+						?>
+					</div>
+				</div>
+				
+				<!-- Mail -->
+				<div class=modif>
+					<label for="titreinfo">Adresse e-mail</label>
+				</div>
+				
+				<div class="zouzou">
+					
+					<div class="bloccc">
+						<?php
+					echo "{$login['mail']}";
+						?>
+					</div>
+				</div>
+			
+</div>
+		<?php
+			include ("./bas.php");
+			
+?>
